@@ -1,3 +1,4 @@
+版本: python 3.11
 # CTRL +  ? 批量删除/添加注释
 
   
@@ -88,6 +89,80 @@ a = 1;b = 2;c = 3
 print(a > b and b > c)
 print(a > b or b > c)
 print(not a > b or b > c)
+
+
+print("today \" is \\ saturday")
+
+
+poem = """
+浪淘沙·把酒祝东风
+欧阳修〔宋代〕
+把酒祝东风，且共从容。垂杨紫陌洛城东。总是当时携手处，游遍芳丛。
+聚散苦匆匆，此恨无穷。今年花胜去年红。可惜明年花更好，知与谁同？
+"""
+print(poem)
+
+
+s1 = "而或"
+s2 = "长烟一空,"
+s3 = "皓月千里"
+s = s1 + s2 + s3
+print(s[0],s[1:3],s[1:99])
+
+
+str1 = "abc"
+print(str1)
+str1 = "bcd"
+print(str1)
+
+
+#error
+s1 = "abc"
+n1 = 123
+t = s1 + n1
+print(t)
+
+
+s1 = "abc"
+n1 = str(123)
+t = s1 + n1
+print(t)
+
+
+name = "fm"
+print(f"my name is {name}")
+
+
+s = ["a","b","c"]
+s[0] = 5
+print(len(s),s[0])
+
+
+s1 = ["张三",20230701,"男",21]
+print(f"name: {s1[0]}\nage: {s1[-1]}")
+
+
+stu = ["张三",20230701,"男",21]
+stu.append("2班")
+stu.insert(1,"一年级");print(stu)
+grades = [90,95,87,66]
+t = stu + grades;print(t)
+t.remove(66);print(t)
+s = t.pop(1);print(t)
+print(s)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
