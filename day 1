@@ -1,0 +1,127 @@
+# CTRL +  ? 批量删除/添加注释
+
+  
+print("Hello World!")
+print("*************")
+
+  
+import time
+print("a")
+time.sleep(2)
+print("b")
+time.sleep(2.3)
+print("c")
+
+
+print(19 + 83 + 42)
+print("19 + 83 + 42")
+
+
+a_age = 16
+b_age = 61
+c_age = 43
+t_age = a_age + b_age + c_age
+print(a_age,t_age)
+a_age = 34
+print(a_age,t_age)
+
+
+a = 5;b = 10;c = 15
+a = 1;b = 2;c = 3
+print(a + b + c)
+
+
+#error
+a = 5
+b = c = d + 5 = a + 2
+print(a,b,c,d)
+
+a = 5
+b = c = d = a + 2
+print(a,b,c,d)
+
+
+a = 1;b = 2;c = 3;d = 4
+print(a,b,c,d)
+a,b,c,d = d,c,b,a
+print(a,b,c,d)
+
+
+#数据类型：(8种)
+#int  float bool str
+#list tuple dict set
+
+  
+a = 15
+print(type(a))
+print(type(int(5)))
+print(type(25))
+print(type(bool(100)))
+
+
+num = 15.8
+print(num,type(num))
+num = int(num)
+print(num,type(num))
+num = float(num)
+print(num,type(num))
+
+
+#  +  -  *  /  %  //  ** 
+#  +=  -=  *=  /=  %=  //=  **=
+#  ==  !=  >=  <=  >  <
+#  bool : true false
+#  and  or  not
+
+n1 = 10;n2 = 3
+print(n1 / n2)
+print(n1 % n2)
+print(n1 ** n2)
+print(n1 // n2)
+
+
+a = 1.1;b = 1.5
+print(a>b,type(a > b))
+
+
+a = 1;b = 2;c = 3
+print(a > b and b > c)
+print(a > b or b > c)
+print(not a > b or b > c)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
