@@ -152,18 +152,68 @@ s = t.pop(1);print(t)
 print(s)
 
 
+#if 语句单分支结构:
+colour = ["蓝色","白色","紫色","绿色","红色","黄色"]
+if "蓝色" in colour :
+	print("存在 蓝色")
+if "黑色" not in colour :
+	print("不存在 黑色")
+c = input("请输入一个颜色：")
+print(c)
+if c in colour :
+	print(f"存在{c}")
+if c not in colour :
+	print(f"不存在 {c}")
 
 
+print("猜数字游戏")
+num = int(input("请输入一个数字:"))
+print(num)
+if num == 5 :
+	print("猜对了")
+if num > 5 :
+	print("猜大了")
+if num < 5 :
+	print("猜小了")
 
 
+c = input("请输入英文\"yes\":\n")
+if c == "yes" :
+	print("ok")
+else :
+	print("no")
 
 
+#if语句多分支结构:
+print("请输入数字获得想要的物品:")
+print("1.稽	2.铌	3.钛")
+print("4.镁	5.	  6.放弃")
+s = int(input())
+if s == 1 :
+	print("ji")
+elif s == 2 :
+	print("ni")
+elif s == 3 :
+	print("tai")
+elif s == 4 :
+	print("mei")
+elif s == 5 :
+	print("多一眼就会爆炸")
+elif s == 6 :
+	print("实在是太美")
+else :
+	print("oh~悲悲，输入错误")
 
 
-
-
-
-
+num = float(input("输入一个正整数:\n"))
+if 100 > num >= 0 :
+	print("num > 0")
+elif 500 > num >= 100 :
+	print("num > 100")
+elif 1000 > num >= 500 :
+	print("num > 500")
+else :
+	print("num > 1000")
 
 
 
