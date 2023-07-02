@@ -86,31 +86,104 @@ list2 = random.sample(list1,3)
 print(list2)
 
 
+#exit强制终止程序
+import sys
+for i in ["ji","ni","shi","zai","shi"] :
+    print(i)
+    if i == "ji" :
+        sys.exit("你干嘛~哈哈哎哟")
 
 
+#猜数字进阶版
+import random
+import sys
+num = random.randint(0,99)
+for i in range(10) :
+	n = int(input("输入一个数字:"))
+	print(n)
+	if n == num :
+		print("猜对了")
+		sys.exit("游戏结束")
+	elif n > num :
+		print("猜大了")
+	elif n < num :
+		print("猜小了")
+	else :
+		print("盲生,你发现了华点!")
+	print(f"还剩{9-i}次寄会")
+	if i == 6:
+		print("你干嘛~哎哟")
+print("ji")
 
 
+#自定义函数
+#无参
+def fun () :
+	for i in range(3) :
+		print("hello world")
+fun()
 
 
+#有参
+def fun (s1,s2) :
+	for i in range(3) :
+		print(f"{s1} hello world {s2}")
+fun("abc","***")
 
 
+def my_sum(star_num,end_num) :
+	sum = 0
+	for i in range(star_num,end_num+1) :
+		sum += i
+	return sum
+sum = my_sum(1,100)
+print(sum)
 
 
+def my_max(a,b) :
+	if a > b :
+		return a
+	return b
+print(my_max(3,8))
 
 
+def my_num() :
+	return 1,2,3,4,5,6
+n1 = my_num()
+print(n1)
+a,b,c,d,e,f = my_num()
+print(a,b,c,d,e,f)
 
 
+#global
+#global 关键字允许你修改当前范围之外的变量
+a = 10
+def my_num() :
+	global a
+	a = 20
+print(a)
+my_num()
+print(a)
 
 
+def stu_info(name,age,sex = "unset") :
+	print(name,age,sex)
+stu_info("张三",18,"男")
+stu_info("李四",21)
 
 
+#默认参数(一般放最后)
+def stu_info(name,age,sex = "unset") :
+	print(name,age,sex)
+stu_info("张三",18,"男")
+stu_info("李四",21)
 
 
-
-
-
-
-
+#可变参数(参数的数量可变),要放在最后
+def fun_letter(*l) :
+	print(f"letter: {l}")
+fun_letter("a","b","c","d")
+fun_letter("e","f")
 
 
 
