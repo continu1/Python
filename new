@@ -1,1 +1,128 @@
+print("Hello World!!!")
+print("你好世界!")
+
+
+print(65)
+print(13.2)
+print("你好")
+
+
+# 单行注释
+
+"""
+    多行
+    注释
+    。
+"""
+
+
+money = 66 ** 6
+print("钱包还有: ",money)
+# 买了一个鼠脖，money-9999999999
+print("钱包还有: ",money-9999999999,"元")
+
+
+# 方法一:使用print直接输出类型信息
+print(type("你好"))
+print(type(123))
+print(type(10.2))
+# 方式二:使用变量存储type()语句的结果
+n = type(123)
+print(n)
+# 方式三:使用type()语句,查看变量中存储的数据类型信息
+n = 10
+print(type(n))
+
+
+num_str = str(11)
+print(type(num_str),num_str)
+
+float_str = str(11.345)
+print(type(float_str),float_str)
+
+n1 = int("11")
+print(type(n1),n1)
+
+n2 = float("12.456")
+print(type(n2),n2)
+
+# error
+# n3 = int("10.223")
+# print(type(n3),n3)
+
+# error
+# n4 = int("ab")
+# print(type(n4),n4)
+
+n5 = int(120.913)
+print(type(n5),n5)
+n5 = float(n5)
+print(type(n5),n5)
+
+
+print("2 + 3 = ",2 + 3)
+print("9 - 5 = ",9 - 5)
+print("2 * 3 = ",2 * 3)
+print("2 / 3 = ",2 / 3)
+print("7 / 3 = ",7 / 3)
+print("6 / 3 = ",6 / 3)
+print("8 // 3 = ",8 // 3)
+print("2 ** 3 = ",2 ** 3)
+
+
+n = 5
+print("n = ",n)
+n += 3
+print("n += 3: ",n)
+n -= 4
+print("n -= 4: ",n)
+n //= 3
+print("n //= 3: ",n)
+n *= 5
+print("n *= 5: ",n)
+n **= 2
+print("n **= 2: ",n)
+n /= 3
+print("n /= 3: ",n)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
