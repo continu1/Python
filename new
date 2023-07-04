@@ -86,29 +86,80 @@ n /= 3
 print("n /= 3: ",n)
 
 
+s1 = '你好'
+print(type(s1),'\'你好\'')
+s2 = "你好"
+print(type(s2),"\"你好\"")
+s3 = """
+你
+好
+"""
+print(type(s3),"\"\"\"\n\
+你\n\
+好\n\
+\"\"\"")
 
 
+s1 = '"a","b",\'c\\d'
+print(s1)
+s2 = "'a',\"b\",\\c\""
+print(s2)
 
 
+print("今天"+"是"+'星期二')
+print("今天","是","星期二")
 
 
+# TypeError: can only concatenate str (not "int") to str
+print("age :" + 100)
 
 
+s1 = "人在天涯鬓已斑。"
+s2 = "江南几度梅花发,%s" %s1
+print(s2)
 
 
+s1 = "羌笛"
+s2 = "杨柳"
+s3 = "玉门关"
+s4 = "%s何须怨%s春风不度%s" % (s1,s2,s3)
+print(s4)
 
 
+print("重拾旧山河,%s" % "朝天阙")
+
+print("name:%s age:%d money:%f" % ("fm",19,666666.666))
 
 
+n = 5
+m = 7
+f = 6.6
+print("""n\
+ =%4d
+m =%-5d'a'
+f =%6.3f\
+""" % (n,m,f))
 
+#精度限制的同时也会进行四舍五入
+n1 = 5.5
+print("1)",n1)
+print("n1 = %.0f\n" % n1)
 
+n1 = 5.55
+print("2)",n1)
+print("n1 = %.0f" % n1)
+print("n1 = %.1f\n" % n1)
 
+n1 = 5.56
+print(n1)
+print("n1 = %.0f" % n1)
+print("n1 = %.1f\n" % n1)
 
-
-
-
-
-
+n1 = 5.555
+print("3)",n1)
+print("n1 = %.0f" % n1)
+print("n1 = %.1f" % n1)
+print("n1 = %.2f\n" % n1)
 
 
 
