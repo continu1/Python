@@ -162,6 +162,57 @@ print("n1 = %.1f" % n1)
 print("n1 = %.2f\n" % n1)
 
 
+name = "guojiao"
+birth = 1973
+alcohol_content = 66.696
+print(f"名字:{name}\n成立于:{birth}\n酒精度数:{alcohol_content}")
+
+
+print("2 * 3 = %d" % (2 * 3))
+print(f"8 ** 2 = {8 ** 2}")
+print("type(str) = %s" % type("23"))
+
+print("2 * 3 = %d" % 6)
+print(f"8 ** 2 = {64}")
+print("type(str) = %s" % "<class 'str'>")
+
+
+s1 = input("输入今天的日期:")
+print(f"今天是:{s1}")
+
+
+n1 = int(input("输入一个整形number:"))
+print(f"The number is: {n1}")
+
+
+result = 9 > 5
+print(f"9 > 5 的结果是: {result},类型是:{type(result)}")
+result = "haha" == "haa"
+print(f"字符串haha与haa是否相等,结果是: {result},类型是: {type(result)}")
+
+
+b1 = True
+b2 = False
+print(f"b1 的内容是: {b1},类型是: {type(b1)}")
+print(f"b2 的内容是: {b2},类型是: {type(b1)}")
+
+
+n = int(float(input("input num:")))
+if n > 100 :
+    print('num > 100')
+else :
+    print("num < 100")
+print("num is",n)
+
+
+
+
+
+
+
+
+
+
 
 
 
