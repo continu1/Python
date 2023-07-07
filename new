@@ -656,10 +656,98 @@ print(f"在字符串{s1}中查找\'and\',其起始下标是:{value}")
 
 ------------------------------------------
 
-
+my_str = "abl a b cabc"
+new_my_str = my_str.replace("ab","8")
+print(f"将字符串\"{my_str}\",进行替换后得到:\"{new_my_str}\"")
 
 ------------------------------------------
+
+my_str = "Be who you are on the inside"
+my_str_list = my_str.split(" ")
+print(f"将字符串{my_str}进行split切分后得到:\n\
+{my_str_list},类型是:{type(my_str_list)}")
+
 ------------------------------------------
+
+my_str = "     Liste to your heart   "
+#print(my_str)
+new_my_str = my_str.strip()   #不传入参数,去除首位空格
+print(f"字符串:{my_str}被strip后,得到的结果是:{new_my_str}")
+
+------------------------------------------
+
+my_str = "1122True 111love 222prevails111222"
+new_my_str = my_str.strip("12") #去除前后的"1" 与 "2"
+print(f"字符串:{my_str}被strip后,得到的结果是:{new_my_str}")
+
+------------------------------------------
+
+my_str = "ab a b ab haab"
+count = my_str.count("ab") 
+print(f"字符串{my_str}中\"ab\"出现的次数是:{count}")
+
+------------------------------------------
+
+my_str = "ab a b ab haab"
+num = len(my_str)
+print(f"字符串\"{my_str}\"的长度是:{num}")
+
+------------------------------------------
+
+def str_while_func (s):
+    n = 0
+    while n < len(s):
+        print(s[n],end = ' ')
+        n += 1
+    print()
+
+def str_for_func (s):
+    for i in s:
+        print(i,end = ' ')
+    print()
+
+my_str = "abcdefg"
+str_while_func(my_str)
+str_for_func(my_str)
+
+******************************************************************************
+
+my_list = [0,1,2,3,4,5,6]
+result1 = my_list[1:4]
+print(f"结果是1: {result1}")
+result2 = my_list[3:1:-1]
+print(f"结果是2: {result2}")
+
+my_tuple = (0,1,2,3,4,5,6)
+result3 = my_tuple[:]
+print(f"结果是3: {result3}")
+result4 = my_tuple[::-2]
+print(f"结果是4: {result4}")
+
+my_str = "01234567"
+result6 = my_str[::2]
+print(f"结果6:{result6}")
+result7 = my_str[::-1]
+print(f"结果7:{result7}")
+
+------------------------------------------
+
+#练习：
+my_str = "夫君子之行,身修以静1,俭以养德"
+#1.
+result1 = my_str[::-1][6:10]
+print(result1)
+#2.
+result2 = my_str[6:10][::-1]
+print(result2)
+#3.
+result3 = my_str.split(",")[1].replace("1","")[::-1]
+print(result3)
+
+******************************************************************************
+
+
+
 ------------------------------------------
 ------------------------------------------
 ------------------------------------------
