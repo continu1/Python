@@ -1,3 +1,114 @@
+*****************************************************************************************************************************
+#函数的多返回值示例:
+def test_return():
+    return 1,2,3
+
+x,y,z = test_return()
+print(x,y,z)
+
+------------------------------------------
+
+def test_return():
+    return 1,"hello",True
+
+x,y,z = test_return()
+print(x,y,z)
+
+------------------------------------------
+#位置参数
+def user_info(name,age,gender):
+    print(f"你的名字是:{name},年龄是:{age},性别是:{gender}")
+
+user_info('A',20,'男')
+
+------------------------------------------
+#关键字参数
+def user_info(name,age,gender):
+    print(f"你的名字是:{name},年龄是:{age},性别是:{gender}")
+
+#关键字传参
+user_info(name='B1',age=20,gender='男')
+#可以不按照固定顺序
+user_info(age=28,gender='男',name='B2')
+#可以和位置参数混用,位置参数必须在前,且匹配参数顺序
+user_info('B3',gender='男',age=26)
+
+------------------------------------------
+#缺省参数:
+def user_info(name,age,gender='男'):
+    print(f"你的名字是:{name},年龄是:{age},性别是:{gender}")
+
+user_info('C1',20)
+user_info('C2',20,'女')
+
+------------------------------------------
+#不定长参数
+def user_info1(*args):
+    print(f"args参数的类型是:{type(args)},内容是:{args}")
+
+#不定长---位置不定长,*号
+#不定长定义的形式参数会作为元组存在,接收不定长数量的参数传入
+user_info1(2,3,5,"A",True)
+
+#不定长---关键字不定长,**号
+def user_info2(**kwargs):
+    print(f"kwargs参数的类型是:{type(kwargs)},内容是:{kwargs}")
+
+user_info2(name='Tom',age=16,id=110)
+
+------------------------------------------
+#定义一个函数,接收另一个函数作为传入函数
+def test_func(compute):
+    result = compute(1,2)
+    print(f"compute参数的类型是:{type(compute)}")
+    print(f"计算结果:{result}")
+#定义一个函数,准备作为参数传入另一个函数
+def compute(x,y):
+    return x + y
+#调用,并传入函数
+test_func(compute)
+
+------------------------------------------
+#定义一个函数,接收其他函数输入
+def test_func(compute):
+    result = compute(1,2)
+    print(f"结果是:{result}")
+#通过lambda匿名函数的形式,将匿名函数作为参数传入
+test_func(lambda x,y:x + y)
+
+*****************************************************************************************************************************
+#打开文件
+f = open("D:/python.txt",'r',encoding='UTF-8')
+pritn(type(f))
+#读取文件 - read()
+# print(f"读取10个字节的结果:{f.read(10)}")
+# print(f"read读取全部内容的结果是:{f.read()}")
+# print()
+
+#读取文件 - readlines()
+#lines = f.readlines() #读取文件的全部行,封装到列表中
+# print(f"lines对象的类型是:{type(lines)}")
+# print(f"lines对象的内容是:{lines}")
+
+#读取文件 - readline()
+# line1 = f.readline()
+# line2 = f.readline()
+# line3 = f.readline()
+# print(f"第1行数据是:{line1}")
+# print(f"第2行数据是:{line2}")
+# print(f"第3行数据是:{line3}")
+
+#for循环读取文件行
+# for line in f:
+#     print(f"每一行的数据是:{line}")
+
+#文件的关闭
+#f.close()
+
+#with open 语法操作文件
+with open("D:/python.txt",'r',encoding='UTF-8') as f1:
+    for line in f1:
+        print(f"每一行的数据是:{line}")
 
 *****************************************************************************************************************************
 
